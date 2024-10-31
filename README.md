@@ -42,7 +42,7 @@ pip install numpy pandas torch patsy formulaic csaps matplotlib seaborn wandb d3
 <p align="center">
   <img src="docs/kernel_weight_lspi.png" width="600">
   <br>
-  <em>Figure 1: An overview of using nonparametric additive models for learning interpretable value functions.</em>
+  <em>Figure 2: A step-by-step illustration of kernel-weighted least squares fixed point approximation.</em>
 </p>
 
 KSH-LSPI combines three key components:
