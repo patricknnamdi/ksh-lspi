@@ -1,3 +1,8 @@
+import os
+import sys
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(root_dir)
+
 import numpy as np
 import seaborn as sns
 import pickle
@@ -141,6 +146,10 @@ def main():
         print("Fitting model for z = {}".format(i))
         ksh_model.learn(train_dataset_1, i, behavioral_init=True)
     ksh_model.policy_iteration(train_dataset_1)
+
+    # Make results directory if it does not exist.
+    if not os.path.exists('results'):
+        os.makedirs('results')
 
     # Save model.
     model_path = 'results/ksh_lspi_model_state_dim_{}_state_idx_{}_h_{}_num_z_{}_num_eps_{}_max_steps_{}.pkl'.format(

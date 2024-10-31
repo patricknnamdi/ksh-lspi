@@ -1,10 +1,11 @@
-from simulation.simulated_mdp import MDP, CorrelatedStatesMDP, NonlinearTransitionMDP
+from simulated_mdp import MDP, CorrelatedStatesMDP, NonlinearTransitionMDP
 from simulation_config import Config
 import numpy as np
 import multiprocessing as mp
 import pickle
 import argparse
 import random
+import os
 
 
 # Generate an episode
@@ -113,6 +114,11 @@ def main():
     #                                                                                                              correlated_states, nonlinear_states, config.NUM_EPISODES,
     #                                                                                                              config.MAX_STEPS, config.MC_MAX_STEPS, config.MC_NUM_EPISODES), "wb") as f:
     #     pickle.dump(mc_q_estimates, f)
+
+    # If folder datasets does not exist, create it
+    if not os.path.exists('datasets'):
+        os.makedirs('datasets')
+
 
     # Save the dataset using pickle
     with open('datasets/offline_dataset_state_dim_{}_discount_{}_correlated_states_{}_nonlinear_states_{}_num_eps_{}_max_steps_{}.pkl'.format(config.STATE_DIM, config.GAMMA, 

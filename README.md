@@ -24,14 +24,21 @@ This repository contains the implementation of Kernel Sieve Hybrid Least-Squares
 
 ## Installation
 
-1. Create a conda environment:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/patricknnamdi/ksh-lspi.git
+cd ksh-lspi
+```
+
+2. Create and activate a conda environment:
 
 ```bash
 conda create -n ksh_env python=3.10.9
 conda activate ksh_env
 ```
 
-2. Install required packages:
+3. Install required packages:
 
 ```bash
 pip install numpy pandas torch patsy formulaic csaps matplotlib seaborn wandb d3rlpy
@@ -62,6 +69,9 @@ To run simulation experiments:
 ```bash
 cd simulation
 python run_simulation.py config.yaml --nonlinear_states
+
+# Train models
+python train_simulated_ksh_model.py config.yaml --nonlinear_states
 ```
 
 Configuration parameters can be modified in `config.yaml`:

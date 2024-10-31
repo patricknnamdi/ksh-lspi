@@ -1,1 +1,6 @@
 simulation/cluster/
+simulation/datasets/
+simulation/wandb/
+simulation/results/
+simulation/__pycache__/
+models/__pycache__/
