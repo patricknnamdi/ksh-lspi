@@ -41,7 +41,7 @@ conda activate ksh_env
 3. Install required packages:
 
 ```bash
-pip install numpy pandas torch patsy formulaic csaps matplotlib seaborn wandb d3rlpy
+pip install -r requirements.txt
 ```
 
 ## Algorithm Overview
