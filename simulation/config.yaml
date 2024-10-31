@@ -1,0 +1,33 @@
+# MDP parameters.
+STATE_DIM: 5
+NUM_ACTIONS: 2
+DISCOUNT: 0.5
+SIGMA: 0.3
+B: 0.1
+DELTA: 0.1
+
+# KSH-LSPI parameters.
+DF: 5
+DEGREE: 3
+MU: 0.00001
+H: 0.1
+LAMBDA_REG: 1
+NUM_Z: 100
+CANDIDATE_STATE_IDX: 0
+MAX_ITER: 1000
+MAX_POLICY_ITER: 0
+BASIS_TYPE: 'trig'
+
+# Simulation parameters.
+NUM_EPISODES: 100
+MAX_STEPS: 10
+GAMMA: 0.99
+MC_NUM_EPISODES: 100
+MC_MAX_STEPS: 10
+
+# Cross-validation parameters.
+N_FOLDS: 5
+
+# Nueral network training parameters.
+N_EPOCHS: 100
+N_STEPS_PER_EPOCH: 1000
