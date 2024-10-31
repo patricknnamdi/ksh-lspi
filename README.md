@@ -12,8 +12,7 @@ This repository contains the implementation of Kernel Sieve Hybrid Least-Squares
 
 ```
 .
-├── simulation/              # Simulation experiments
-│   ├── cluster/            # Cluster computation scripts
+├── simulation/            # Simulation experiments
 │   ├── data/              # Simulation data generators
 │   └── config.yaml        # Configuration parameters
 ├── models/                # Core algorithm implementations
@@ -48,9 +47,9 @@ pip install numpy pandas torch patsy formulaic csaps matplotlib seaborn wandb d3
 
 KSH-LSPI combines three key components:
 
-a. B-spline or trigonometric basis expansion for flexible function approximation
-b. Kernel-wighted least square fixed point approximation for local approximation
-c. Group LASSO regularization for component-wise feature selection using randomized coordinate descent
+* B-spline or trigonometric basis expansion for flexible function approximation
+* Kernel-wighted least square fixed point approximation for local approximation
+* Group LASSO regularization for component-wise feature selection using randomized coordinate descent
 
 The algorithm learns interpretable, nonparametric value functions that decompose into additive components, making it possible to understand how individual continuous state features and their associated interactions contribute to the overall value estimate.
 
