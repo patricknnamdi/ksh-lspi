@@ -68,9 +68,11 @@ To run simulation experiments:
 
 ```bash
 cd simulation
+
+# Generate sample under selected MDP
 python run_simulation.py config.yaml --nonlinear_states
 
-# Train models
+# Train KSH-LSPI model
 python train_simulated_ksh_model.py config.yaml --nonlinear_states
 ```
 
