@@ -13,7 +13,7 @@ This repository contains the implementation of Kernel Sieve Hybrid Least-Squares
 ```
 .
 ├── simulation/            # Simulation experiments
-│   ├── data/              # Simulation data generators
+│   ├── data/              # Simulation data
 │   └── config.yaml        # Configuration parameters
 ├── models/                # Core algorithm implementations
 │   └── ksh_lspi_algorithm.py  # Main KSH-LSPI implementation
